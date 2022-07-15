@@ -94,6 +94,12 @@ h2 {
   padding-left: 56px;
 }
 
+.units {
+  position: relative;
+  font-size: 18px;
+  top: -40px;
+  margin-left: -8px;
+}
 .wind-image {
   height: 48px;
   width: 48px;

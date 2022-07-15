@@ -40,7 +40,7 @@ dateElement.innerHTML = formatDate(now);
 function displayWeather(response) {
     document.querySelector("#city").innerHTML = response.data.name;
     let temperatureElement = Math.round(response.data.main.temp);
-    document.querySelector("#temperature").innerHTML = `${temperatureElement} °C`;
+    document.querySelector("#temperature").innerHTML = `${temperatureElement}`;
     let windIndex = document.querySelector("#wind-index");
     let wind = Math.round(response.data.wind.speed);
     windIndex.innerHTML = `${wind} km/h`;
