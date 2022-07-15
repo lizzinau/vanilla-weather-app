@@ -1,0 +1,69 @@
+<svg width="52" height="51" viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39.2 25.5C39.2 32.7902 33.2902 38.7 26 38.7C18.7099 38.7 12.8 32.7902 12.8 25.5C12.8 18.2098 18.7099 12.3 26 12.3C33.2902 12.3 39.2 18.2098 39.2 25.5Z" stroke="white" stroke-width="3"/>
+<line x1="49.0001" y1="25.3" x2="43.8001" y2="25.3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="8.20007" y1="25.3" x2="3.00007" y2="25.3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="49.0001" y1="25.3" x2="43.8001" y2="25.3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="8.20007" y1="25.3" x2="3.00007" y2="25.3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g clip-path="url(#clip0_16_288)">
+<line x1="46.0186" y1="36.8268" x2="41.5153" y2="34.2268" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g clip-path="url(#clip1_16_288)">
+<line x1="10.6848" y1="16.4268" x2="6.18142" y2="13.8268" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g clip-path="url(#clip2_16_288)">
+<line x1="37.6733" y1="45.3186" x2="35.0733" y2="40.8153" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g clip-path="url(#clip3_16_288)">
+<line x1="17.2733" y1="9.98474" x2="14.6733" y2="5.48141" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g clip-path="url(#clip4_16_288)">
+<line x1="26.2001" y1="48.5" x2="26.2001" y2="43.3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g clip-path="url(#clip5_16_288)">
+<line x1="26.2001" y1="7.7" x2="26.2001" y2="2.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g clip-path="url(#clip6_16_288)">
+<line x1="14.6733" y1="45.5186" x2="17.2733" y2="41.0152" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g clip-path="url(#clip7_16_288)">
+<line x1="35.0732" y1="10.1847" x2="37.6732" y2="5.68141" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g clip-path="url(#clip8_16_288)">
+<line x1="6.18146" y1="37.1732" x2="10.6848" y2="34.5732" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g clip-path="url(#clip9_16_288)">
+<line x1="41.5153" y1="16.7732" x2="46.0187" y2="14.1732" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_16_288">
+<rect x="40.7101" y="31.2215" width="9.6" height="4.8" rx="2.4" transform="rotate(30 40.7101 31.2215)" fill="white"/>
+</clipPath>
+<clipPath id="clip1_16_288">
+<rect x="5.37622" y="10.8215" width="9.6" height="4.8" rx="2.4" transform="rotate(30 5.37622 10.8215)" fill="white"/>
+</clipPath>
+<clipPath id="clip2_16_288">
+<rect x="35.8785" y="37.81" width="9.6" height="4.8" rx="2.4" transform="rotate(60 35.8785 37.81)" fill="white"/>
+</clipPath>
+<clipPath id="clip3_16_288">
+<rect x="15.4785" y="2.47615" width="9.6" height="4.8" rx="2.4" transform="rotate(60 15.4785 2.47615)" fill="white"/>
+</clipPath>
+<clipPath id="clip4_16_288">
+<rect x="28.4" y="41.1" width="9.6" height="4.8" rx="2.4" transform="rotate(90 28.4 41.1)" fill="white"/>
+</clipPath>
+<clipPath id="clip5_16_288">
+<rect x="28.4" y="0.300003" width="9.6" height="4.8" rx="2.4" transform="rotate(90 28.4 0.300003)" fill="white"/>
+</clipPath>
+<clipPath id="clip6_16_288">
+<rect x="20.2786" y="40.21" width="9.6" height="4.8" rx="2.4" transform="rotate(120 20.2786 40.21)" fill="white"/>
+</clipPath>
+<clipPath id="clip7_16_288">
+<rect x="40.6785" y="4.87616" width="9.6" height="4.8" rx="2.4" transform="rotate(120 40.6785 4.87616)" fill="white"/>
+</clipPath>
+<clipPath id="clip8_16_288">
+<rect x="13.6901" y="35.3785" width="9.6" height="4.8" rx="2.4" transform="rotate(150 13.6901 35.3785)" fill="white"/>
+</clipPath>
+<clipPath id="clip9_16_288">
+<rect x="49.0239" y="14.9785" width="9.6" height="4.8" rx="2.4" transform="rotate(150 49.0239 14.9785)" fill="white"/>
+</clipPath>
+</defs>
+</svg>
