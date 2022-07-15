@@ -14,59 +14,60 @@
 
 <body>
     <div class="container">
-        <form class="search-form" id="search-form">
-            <div class="row">
-                <div class="col-9">
-                    <input type="text" placeholder="Type a city.." autofocus="on" autocomplete="off" id="city-input"
-                        class="search" />
-                </div>
-                <div class="col-3">
-                    <input type="submit" value="Search" class="btn-search" />
-                </div>
-            </div>
-        </form>
-        <div class="wrapper">
-            <div class="content">
-                <h1 id="city">
-                    Kyiv
-                </h1>
-                <h2 id="date">
-                    15.07.2022
-                </h2>
-                <div class="row data">
-                    <div class="col-6 sun-and-temp">
-                        <img class="sun" src="images/sun.svg" alt="" />
-                        <div class="temperature-index">
-                            <span class="temperature" id="temperature">
-                                24 C
-                            </span>
-                        </div>
+        <div class="weather-app">
+            <form class="search-form" id="search-form">
+                <div class="row">
+                    <div class="col-9">
+                        <input type="text" placeholder="Type a city.." autofocus="on" autocomplete="off" id="city-input"
+                            class="search" />
                     </div>
-                    <div class="col-6 indexes">
-                        <div class="wind">
-                            <span>
-                                <img class="wind-image" src="images/windy.svg" alt="" />
-                            </span>
+                    <div class="col-3">
+                        <input type="submit" value="Search" class="btn-search" />
+                    </div>
+                </div>
+            </form>
+            <div class="wrapper">
+                <div class="content">
+                    <h1 id="city">
+                        Kyiv
+                    </h1>
+                    <h2 id="date">
+                        15.07.2022
+                    </h2>
+                    <div class="row data">
+                        <div class="col-6 sun-and-temp">
+                            <img class="sun" src="images/sun.svg" alt="" />
+                            <div class="temperature-index">
+                                <span class="temperature" id="temperature">
+                                    24 C
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6 indexes">
+                            <div class="wind">
+                                <span>
+                                    <img class="wind-image" src="images/windy.svg" alt="" />
+                                </span>
 
-                            <span id="wind-index">
-                                18 km/h
-                            </span>
-                        </div>
-                        <div class="humidity" id="humidity">
-                            Humidity is 20%
+                                <span id="wind-index">
+                                    18 km/h
+                                </span>
+                            </div>
+                            <div class="humidity" id="humidity">
+                                Humidity is 20%
+                            </div>
                         </div>
                     </div>
+                    <small>
+                        <a href="https://github.com/lizzinau/new-weather-app" target="_blank">Open-source code</a>
+                        by Yelyzaveta Naumova
+                    </small>
                 </div>
-                <small>
-                    <a href="https://github.com/lizzinau/new-weather-app" target="_blank">Open-source code</a>
-                    by Yelyzaveta Naumova
-                </small>
             </div>
         </div>
     </div>
-
-    <script src="src/script.js"></script>
     </div>
+    <script src="src/script.js"></script>
 </body>
 
 </html>
