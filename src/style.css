@@ -124,6 +124,15 @@ a {
   text-decoration: none;
 }
 
+.sun-and-temp .active {
+  color: #fff;
+  cursor: default;
+}
+
+.sun-and-temp .active:hover {
+  text-decoration: none;
+}
+
 .btn-search:hover {
   background-color: #133fdb;
   color: white;
