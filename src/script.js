@@ -46,7 +46,9 @@ function displayWeather(response) {
     windIndex.innerHTML = `${wind} km/h`;
     let humidity = document.querySelector("#humidity");
     let humidityIndex = Math.round(response.data.main.humidity);
-    humidity.innerHTML = `Humidity  is ${humidityIndex}%`;
+    humidity.innerHTML = `Humidity: ${humidityIndex}%`;
+    let iconElement = document.querySelector("#icon");
+    iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 
     celsiusTemperature = response.data.main.temp;
 }
