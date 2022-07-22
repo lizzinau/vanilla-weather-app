@@ -36,6 +36,37 @@ let dateElement = document.querySelector("#date");
 let now = new Date();
 dateElement.innerHTML = formatDate(now);
 
+
+function displayForecast() {
+let forecastElement = document.querySelector("#forecast");
+
+let forecastHTML = `<div class = "row">`;
+forecastHTML = forecastHTML + `
+    <div class = "col-2" >
+    <div class = "forecast-date" > Mon < /div> <
+img src = "https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+alt = "" />
+    <div class = "forecast-temperature-index">
+    <span class = "weather-forecast-temperature-max" > 18° < /span> 
+    <span class = "weather-forecast-temperature-min" > 12° < /span> < /div>
+     </div>`;
+     forecastHTML = forecastHTML + `
+    <div class = "col-2" >
+    <div class = "forecast-date" > Mon < /div> <
+img src = "https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+alt = "" />
+    <div class = "forecast-temperature-index">
+    <span class = "weather-forecast-temperature-max" > 18° < /span> 
+    <span class = "weather-forecast-temperature-min" > 12° < /span> < /div>
+     </div>`;
+
+    forecastHTML = forecastHTML + `</div>`;
+forecastElement.innerHTML = forecastHTML;
+
+}
+
+
+
 // Current Weather
 function displayWeather(response) {
     document.querySelector("#city").innerHTML = response.data.name;
@@ -50,6 +81,7 @@ function displayWeather(response) {
     let iconElement = document.querySelector("#icon");
     let iconElementAPI = response.data.weather[0].icon;
     iconElement.setAttribute("src", `images/${iconElementAPI}.png`);
+
 
     celsiusTemperature = response.data.main.temp;
 }
@@ -96,6 +128,7 @@ let celsiusTemperature = null;
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 search("Kyiv");
+displayForecast();
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
