@@ -38,31 +38,31 @@ dateElement.innerHTML = formatDate(now);
 
 
 function displayForecast() {
-let forecastElement = document.querySelector("#forecast");
+    let forecastElement = document.querySelector("#forecast");
 
-let forecastHTML = `<div class = "row">`;
-forecastHTML = forecastHTML + `
-    <div class = "col-2" >
-    <div class = "forecast-date" > Mon < /div> <
-img src = "https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+    let forecastHTML = `<div class = "row">`;
+    forecastHTML =
+        forecastHTML +
+        `
+    <div class="col-2">
+    <div class="forecast-date"> Mon </div> <img src = "https://ssl.gstatic.com/onebox/weather/64/sunny.png"
 alt = "" />
     <div class = "forecast-temperature-index">
-    <span class = "weather-forecast-temperature-max" > 18° < /span> 
-    <span class = "weather-forecast-temperature-min" > 12° < /span> < /div>
+    <span class = "weather-forecast-temperature-max" > 18° </span> 
+    <span class = "weather-forecast-temperature-min" > 12° </span> </div>
      </div>`;
-     forecastHTML = forecastHTML + `
-    <div class = "col-2" >
-    <div class = "forecast-date" > Mon < /div> <
-img src = "https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-alt = "" />
+    forecastHTML =
+        forecastHTML +
+        `
+    <div class = "col-2">
+    <div class = "forecast-date"> Mon </div> <img src = "https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt = "" />
     <div class = "forecast-temperature-index">
-    <span class = "weather-forecast-temperature-max" > 18° < /span> 
-    <span class = "weather-forecast-temperature-min" > 12° < /span> < /div>
+    <span class = "weather-forecast-temperature-max" > 18° </span> 
+    <span class = "weather-forecast-temperature-min" > 12° </span> </div>
      </div>`;
 
     forecastHTML = forecastHTML + `</div>`;
-forecastElement.innerHTML = forecastHTML;
-
+    forecastElement.innerHTML = forecastHTML;
 }
 
 
