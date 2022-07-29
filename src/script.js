@@ -38,32 +38,26 @@ dateElement.innerHTML = formatDate(now);
 
 
 function displayForecast(response) {
-    console.log(response.data.daily);
+    //  let forecast = response.data.daily;
+    // console.log(forecast);
     let forecastElement = document.querySelector("#forecast");
+    let days = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu"];
 
-    let forecastHTML = `<div class = "row">`;
-    forecastHTML =
-        forecastHTML +
-        `
+    let forecastHTML = `<div class="row">`;
+
+        forecastHTML = forecastHTML +
+            `
     <div class="col-2">
-    <div class="forecast-date"> Mon </div> <img src = "https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+    <div class="forecast-date"> ${day} </div> <img src = "https://ssl.gstatic.com/onebox/weather/64/sunny.png"
 alt = "" />
     <div class = "forecast-temperature-index">
     <span class = "weather-forecast-temperature-max" > 18° </span> 
     <span class = "weather-forecast-temperature-min" > 12° </span> </div>
-     </div>`;
-    forecastHTML =
-        forecastHTML +
-        `
-    <div class = "col-2">
-    <div class = "forecast-date"> Mon </div> <img src = "https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt = "" />
-    <div class = "forecast-temperature-index">
-    <span class = "weather-forecast-temperature-max" > 18° </span> 
-    <span class = "weather-forecast-temperature-min" > 12° </span> </div>
-     </div>`;
-
-    forecastHTML = forecastHTML + `</div>`;
-    forecastElement.innerHTML = forecastHTML;
+     </div>
+     `;
+    });
+forecastHTML = forecastHTML + `</div>`;
+forecastElement.innerHTML = forecastHTML;
 }
 
 
@@ -86,7 +80,7 @@ function displayWeather(response) {
 
     celsiusTemperature = response.data.main.temp;
 
-getForecast(response.data.coord);
+    getForecast(response.data.coord);
 
 }
 
@@ -103,10 +97,10 @@ function handleSubmit(event) {
 }
 
 //getForecast
- function getForecast(coordinates) {
-  let apiKey = "3ddfb4a3cef4a9c572f5854ea3b9972d";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
- axios.get(apiUrl).then(displayForecast);
+function getForecast(coordinates) {
+    let apiKey = "3ddfb4a3cef4a9c572f5854ea3b9972d";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayForecast);
 
 }
 
@@ -138,7 +132,8 @@ let celsiusTemperature = null;
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 search("Kyiv");
-displayForecast();
+
+//displayForecast();
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
