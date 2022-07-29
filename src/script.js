@@ -37,7 +37,8 @@ let now = new Date();
 dateElement.innerHTML = formatDate(now);
 
 
-function displayForecast() {
+function displayForecast(response) {
+    console.log(response.data.daily);
     let forecastElement = document.querySelector("#forecast");
 
     let forecastHTML = `<div class = "row">`;
@@ -84,6 +85,9 @@ function displayWeather(response) {
 
 
     celsiusTemperature = response.data.main.temp;
+
+getForecast(response.data.coord);
+
 }
 
 function search(city) {
@@ -98,7 +102,13 @@ function handleSubmit(event) {
     search(city);
 }
 
+//getForecast
+ function getForecast(coordinates) {
+  let apiKey = "3ddfb4a3cef4a9c572f5854ea3b9972d";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+ axios.get(apiUrl).then(displayForecast);
 
+}
 
 
 
