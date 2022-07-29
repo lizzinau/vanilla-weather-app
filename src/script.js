@@ -44,6 +44,7 @@ function displayForecast(response) {
     let days = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu"];
 
     let forecastHTML = `<div class="row">`;
+    days.forEach(function (day) {
 
         forecastHTML = forecastHTML +
             `
